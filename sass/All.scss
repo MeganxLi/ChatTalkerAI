@@ -1,6 +1,8 @@
-@import "reset";
-@import "mixins";
+//base
+@import "./base/reset";
+@import "./base/font";
+@import "./base/base";
 
-@import "font";
-@import "base";
-@import "input";
+//util
+@import "./util/mixins";
+@import "./util/variables";
