@@ -233,9 +233,3 @@ body {
 p {
   font-weight: 500;
 }
-
-@media (min-width: 1024px) {
-  .a {
-    margin: 0;
-  }
-}
