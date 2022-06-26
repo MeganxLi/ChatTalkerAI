@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,14 +154,14 @@ table {
 @font-face {
   font-family: "Noto Sans TC";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url(../font/NotoSansTC-Regular.woff2) format("woff2"), url(../font/NotoSansTC-Regular.woff) format("woff"), url(../font/NotoSansTC-Regular.otf) format("opentype");
 }
 
 @font-face {
   font-family: "Noto Sans TC";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   src: url(../font/NotoSansTC-Medium.woff2) format("woff2"), url(../font/NotoSansTC-Medium.woff) format("woff"), url(../font/NotoSansTC-Medium.otf) format("opentype");
 }
 
@@ -178,58 +179,628 @@ table {
   src: url(../font/NotoSansTC-Black.woff2) format("woff2"), url(../font/NotoSansTC-Black.woff) format("woff"), url(../font/NotoSansTC-Black.otf) format("opentype");
 }
 
-/*
-* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 100;
-  src: url(../font/NotoSansTC-Thin.woff2) format("woff2"), url(../font/NotoSansTC-Thin.woff) format("woff"), url(../font/NotoSansTC-Thin.otf) format("opentype");
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 300;
-  src: url(../font/NotoSansTC-Light.woff2) format("woff2"), url(../font/NotoSansTC-Light.woff) format("woff"), url(../font/NotoSansTC-Light.otf) format("opentype");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/NotoSansTC-Regular.woff2) format("woff2"), url(../font/NotoSansTC-Regular.woff) format("woff"), url(../font/NotoSansTC-Regular.otf) format("opentype");
+html {
+  font-size: 16px;
 }
 
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 500;
-  src: url(../font/NotoSansTC-Medium.woff2) format("woff2"), url(../font/NotoSansTC-Medium.woff) format("woff"), url(../font/NotoSansTC-Medium.otf) format("opentype");
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
 }
 
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 700;
-  src: url(../font/NotoSansTC-Bold.woff2) format("woff2"), url(../font/NotoSansTC-Bold.woff) format("woff"), url(../font/NotoSansTC-Bold.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 900;
-  src: url(../font/NotoSansTC-Black.woff2) format("woff2"), url(../font/NotoSansTC-Black.woff) format("woff"), url(../font/NotoSansTC-Black.otf) format("opentype");
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 body {
   font-family: "Noto Sans TC", -apple-system, "Roboto", sans-serif;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-p {
-  font-weight: 500;
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.back-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 1.5rem 140px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 1.5rem 10%;
+  }
+}
+
+.webkit::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+.webkit::-webkit-scrollbar {
+  height: 6px;
+  background-color: #f5f5f5;
+}
+
+.webkit::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #56c4c5;
+  color: #ffffff;
+  border: none;
+  border-radius: 27px;
+  padding: 10px 32px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+button:hover {
+  background-color: #69cbcc;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+header nav.nav {
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+header nav.nav.hideUp {
+  border-bottom: 2px solid #f5ca52;
+  background-color: #ffffff;
+}
+
+@media (max-width: 375px) {
+  header nav.nav {
+    background-color: #ffffff;
+    border-bottom: 2px solid #f5ca52;
+  }
+}
+
+header nav.nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header nav.nav .container .logo {
+  height: 40px;
+}
+
+@media (max-width: 640px) {
+  header nav.nav .container .logo {
+    height: 24px;
+  }
+}
+
+header nav.nav .container .logo img {
+  height: 100%;
+}
+
+header nav.nav .container .pricing-link {
+  max-height: 40px;
+  border-radius: 22px;
+  padding: 8px 32px;
+  background-color: #ff5d50;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+header .page-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: top right;
+  right: 0;
+  z-index: 1;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+header .wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 375px) {
+  header .wrapper {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+}
+
+header .wrapper .introduce,
+header .wrapper .home-img {
+  width: 50%;
+}
+
+@media (max-width: 375px) {
+  header .wrapper .introduce,
+  header .wrapper .home-img {
+    margin-top: 70px;
+    padding-top: 48px;
+    width: 100%;
+  }
+}
+
+header .wrapper .introduce h4 {
+  color: #56c4c5;
+  margin-bottom: 8px;
+}
+
+header .wrapper .home-img {
+  height: 100%;
+}
+
+header .page-bg-ball-1 {
+  background-image: url(../../img/ball01.svg);
+  width: 100%;
+  height: 360px;
+  position: absolute;
+  background-position: left;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#index .page-bg {
+  background-image: url(../../img/bg_home.svg);
+  width: 60%;
+}
+
+#pricing header {
+  height: 470px;
+}
+
+@media (max-width: 640px) {
+  #pricing header {
+    height: 495px;
+  }
+}
+
+#pricing header::after {
+  content: "";
+  position: absolute;
+  background-color: #f7f9fd;
+  width: 100%;
+  height: 470px;
+  border-radius: 0 0 0 300px;
+  top: 0;
+}
+
+#pricing header .page-bg {
+  background-image: url(../../img/banner.svg);
+  width: 70%;
+  min-width: 480px;
+}
+
+@media (max-width: 375px) {
+  #pricing header .page-bg {
+    background-image: url(../../img/banner_sm.svg);
+  }
+}
+
+#pricing header .introduce {
+  width: 100%;
+}
+
+#pricing main .program::before {
+  content: "";
+  background-image: url(../../img/ball03.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  -webkit-transform: translateX(-60%) rotate(180deg);
+          transform: translateX(-60%) rotate(180deg);
+  z-index: -1;
+}
+
+#pricing main .program h2 {
+  text-align: center;
+}
+
+#pricing main .program .program-list {
+  margin: 48px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  #pricing main .program .program-list {
+    overflow-x: auto;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+}
+
+#pricing main .program .program-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1rem;
+}
+
+#pricing main .program .program-list li input[type="radio"] {
+  display: none;
+}
+
+#pricing main .program .program-list li label {
+  padding: 0.75rem 2rem;
+  color: #56c4c5;
+  outline: 1px solid #56c4c5;
+  border-radius: 27px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#pricing main .program .program-list li:hover label,
+#pricing main .program .program-list li input:checked + label {
+  background-color: #56c4c5;
+  color: #ffffff;
+}
+
+#pricing main .program .program-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#pricing main .program .program-cost .cost-group {
+  width: 45%;
+  margin: 1rem;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  #pricing main .program .program-cost .cost-group {
+    width: 100%;
+  }
+}
+
+#pricing main .program .program-cost .cost-group .cost-title {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #dddddd;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text {
+  padding: 1rem;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text p {
+  text-align: center;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number {
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  padding: 24px 10px;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group p,
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group span {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group h2::after {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group h2.cost_people::after {
+  content: "位";
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group h2.cost_twd::after {
+  content: "TWD";
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-number-group:first-child h2 {
+  color: #56c4c5;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text .cost-info li {
+  list-style-image: url("../../img/icon_check.svg");
+  margin: 0 0 16px 28px;
+  text-align: left;
+}
+
+#pricing main .program .program-cost .cost-group .cost-text button {
+  margin: 1.8rem auto;
+}
+
+#pricing main .QA {
+  margin-top: 100px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+#pricing main .QA .QA-list {
+  margin-top: 48px;
+}
+
+#pricing main .QA .QA-item {
+  text-align: left;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+#pricing main .QA .QA-item label {
+  position: relative;
+}
+
+#pricing main .QA .QA-item label h4::after {
+  content: "";
+  background-image: url(../../img/icon_plus.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  right: 0;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+#pricing main .QA .QA-item p {
+  color: #747474;
+  margin: 0;
+  height: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+#pricing main .QA .QA-item input[type="radio"] {
+  display: none;
+}
+
+#pricing main .QA .QA-item input[type="radio"]:checked ~ label > h4 {
+  color: #56c4c5;
+  font-weight: 600;
+}
+
+#pricing main .QA .QA-item input[type="radio"]:checked ~ label > h4::after {
+  background-image: url(../../img/icon_minus.svg);
+  line-height: 1.25rem;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+#pricing main .QA .QA-item input[type="radio"]:checked ~ p {
+  height: auto;
+  margin: 24px 0;
 }
