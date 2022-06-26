@@ -1,58 +1,202 @@
-/*
-* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-   font-family: "Noto Sans TC";
-   font-style: normal;
-   font-weight: 100;
-   src: url(../font/NotoSansTC-Thin.woff2) format("woff2"), url(../font/NotoSansTC-Thin.woff) format("woff"),
-      url(../font/NotoSansTC-Thin.otf) format("opentype");
-}
-@font-face {
-   font-family: "Noto Sans TC";
-   font-style: normal;
-   font-weight: 300;
-   src: url(../font/NotoSansTC-Light.woff2) format("woff2"), url(../font/NotoSansTC-Light.woff) format("woff"),
-      url(../font/NotoSansTC-Light.otf) format("opentype");
-}
-@font-face {
-   font-family: "Noto Sans TC";
-   font-style: normal;
-   font-weight: 400;
-   src: url(../font/NotoSansTC-Regular.woff2) format("woff2"), url(../font/NotoSansTC-Regular.woff) format("woff"),
-      url(../font/NotoSansTC-Regular.otf) format("opentype");
-}
-@font-face {
-   font-family: "Noto Sans TC";
-   font-style: normal;
-   font-weight: 500;
-   src: url(../font/NotoSansTC-Medium.woff2) format("woff2"), url(../font/NotoSansTC-Medium.woff) format("woff"),
-      url(../font/NotoSansTC-Medium.otf) format("opentype");
-}
-@font-face {
-   font-family: "Noto Sans TC";
-   font-style: normal;
-   font-weight: 700;
-   src: url(../font/NotoSansTC-Bold.woff2) format("woff2"), url(../font/NotoSansTC-Bold.woff) format("woff"),
-      url(../font/NotoSansTC-Bold.otf) format("opentype");
-}
-@font-face {
-   font-family: "Noto Sans TC";
-   font-style: normal;
-   font-weight: 900;
-   src: url(../font/NotoSansTC-Black.woff2) format("woff2"), url(../font/NotoSansTC-Black.woff) format("woff"),
-      url(../font/NotoSansTC-Black.otf) format("opentype");
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+   margin: 0;
+   padding: 0;
+   font: inherit;
+   font-size: 100%;
+   border: 0;
+   vertical-align: baseline;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
 }
 
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+html {
+   font-size: 16px;
+
+   @include rwd(md) {
+      font-size: 14px;
+   }
+
+   @include rwd(xs) {
+      font-size: 12px;
+   }
+}
 
 body {
    font-family: "Noto Sans TC", -apple-system, "Roboto", sans-serif;
    font-style: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+   line-height: 1;
+   position: relative;
+   @include font-size(base);
 }
 
-p {
-   font-weight: 500;
+ol,
+ul {
+   list-style: none;
+}
+
+a {
+   display: inline-block;
+   color: inherit;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+h1 {
+   @include font-size(4xl);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+h2 {
+   @include font-size(3xl);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+h3 {
+   @include font-size(2xl);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+h4 {
+   @include font-size(lg);
+}
+
+.back-img {
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.container {
+   max-width: 1366px;
+   margin: 0 auto;
+   padding: 1.5rem 140px;
+   @include rwd(xl) {
+      padding: 1.5rem 10%;
+   }
+}
+
+.webkit {
+   &::-webkit-scrollbar-track {
+      background-color: rgba(#f5f5f5, 50%);
+   }
+
+   &::-webkit-scrollbar {
+      height: 6px;
+      background-color: #f5f5f5;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: $color-black-500;
+      border-radius: 10px;
+   }
+}
+
+button {
+   background-color: $colors-primary;
+   color: $color-black-0;
+   border: none;
+   border-radius: 27px;
+   padding: 10px 32px;
+   cursor: pointer;
+   @include font-size(lg);
+
+   &:hover {
+      background-color: lighten($colors-primary, 5);
+   }
 }

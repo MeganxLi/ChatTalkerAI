@@ -1,9 +1,9 @@
 $media: (
-   2xs: 320px,
+   2xs: 375px,
    xs: 480px,
    sm: 640px,
    md: 768px,
-   lg: 1024px,
+   lg: 992px,
    xl: 1280px,
    2xl: 1536px,
 );
@@ -12,7 +12,7 @@ $media: (
    @if map-has-key($media, $breakpoint) {
       $point: map-get($media, $breakpoint);
 
-      @media (min-width: $point) {
+      @media (max-width: $point) {
          @content;
       }
    } @else {

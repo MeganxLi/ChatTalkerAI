@@ -1,8 +1,16 @@
+//util
+@import "./util/mixins";
+@import "./util/variables";
+
 //base
 @import "./base/reset";
 @import "./base/font";
 @import "./base/base";
 
-//util
-@import "./util/mixins";
-@import "./util/variables";
+//components
+@import "./components/header";
+@import "./components/footer";
+
+//page
+@import "./page/index";
+@import "./page/pricing";
