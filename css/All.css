@@ -516,7 +516,7 @@ header .wrapper .home-img {
 }
 
 header .page-bg-ball-1 {
-  background-image: url(../../img/ball01.svg);
+  background-image: url(../img/ball01.svg);
   width: 100%;
   height: 360px;
   position: absolute;
@@ -531,7 +531,7 @@ footer {
 }
 
 #index .page-bg {
-  background-image: url(../../img/bg_home.svg);
+  background-image: url(../img/bg_home.svg);
   width: 60%;
 }
 
@@ -556,14 +556,14 @@ footer {
 }
 
 #pricing header .page-bg {
-  background-image: url(../../img/banner.svg);
+  background-image: url(../img/banner.svg);
   width: 70%;
   min-width: 480px;
 }
 
 @media (max-width: 375px) {
   #pricing header .page-bg {
-    background-image: url(../../img/banner_sm.svg);
+    background-image: url(../img/banner_sm.svg);
   }
 }
 
@@ -573,7 +573,7 @@ footer {
 
 #pricing main .program::before {
   content: "";
-  background-image: url(../../img/ball03.svg);
+  background-image: url(../.img/ball03.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 360px;
@@ -730,7 +730,7 @@ footer {
 }
 
 #pricing main .program .program-cost .cost-group .cost-text .cost-info li {
-  list-style-image: url("../../img/icon_check.svg");
+  list-style-image: url("../img/icon_check.svg");
   margin: 0 0 16px 28px;
   text-align: left;
 }
@@ -765,7 +765,7 @@ footer {
 
 #pricing main .QA .QA-item label h4::after {
   content: "";
-  background-image: url(../../img/icon_plus.svg);
+  background-image: url(../img/icon_plus.svg);
   background-repeat: no-repeat;
   position: absolute;
   width: 1.25rem;
@@ -794,7 +794,7 @@ footer {
 }
 
 #pricing main .QA .QA-item input[type="radio"]:checked ~ label > h4::after {
-  background-image: url(../../img/icon_minus.svg);
+  background-image: url(../img/icon_minus.svg);
   line-height: 1.25rem;
   -webkit-transform: translate(0, 50%);
           transform: translate(0, 50%);
