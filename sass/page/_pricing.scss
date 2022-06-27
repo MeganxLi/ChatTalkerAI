@@ -123,7 +123,7 @@
                      background-color: $color-black-400;
                      border-radius: 12px;
                      flex: 1 0;
-                     padding: 24px 10px;
+                     padding: 1.5rem 0.75rem;
                      p,
                      span {
                         @include font-size(xs);
@@ -174,25 +174,37 @@
             background: $color-black-0 0% 0% no-repeat padding-box;
             box-shadow: 0px 2px 10px #00000014;
             margin-bottom: 1rem;
-            padding: 1rem 2rem;
             border-radius: 12px;
+            display: flex;
+            flex-direction: column;
 
             label {
                position: relative;
-               h4::after {
+               cursor: pointer;
+               padding: 1rem 2rem;
+               @include font-size(lg);
+               display: flex;
+               align-items: center;
+               transition: 0.3s;
+
+               &::after {
                   content: "";
                   background-image: url(../img/icon_plus.svg);
                   background-repeat: no-repeat;
-                  position: absolute;
-                  width: 1.25rem;
-                  height: 1.25rem;
-                  right: 0;
+                  width: 20px;
+                  height: 20px;
+                  margin-left: auto;
                   transition: background-image 0.2s ease-in-out;
+               }
+
+               &:hover {
+                  color: $colors-primary;
+                  font-weight: 600;
                }
             }
             p {
                color: $color-black-700;
-               margin: 0;
+               padding: 0 2rem;
                height: 0px;
                transition: 0.3s;
                overflow: hidden;
@@ -200,11 +212,11 @@
             input[type="radio"] {
                display: none;
             }
-            input[type="radio"]:checked ~ label > h4 {
+            input[type="radio"]:checked ~ label {
                color: $colors-primary;
                font-weight: 600;
             }
-            input[type="radio"]:checked ~ label > h4::after {
+            input[type="radio"]:checked ~ label::after {
                background-image: url(../img/icon_minus.svg);
                line-height: 1.25rem;
                transform: translate(0, 50%);
@@ -212,7 +224,7 @@
 
             input[type="radio"]:checked ~ p {
                height: auto;
-               margin: 24px 0;
+               padding: 0 2rem 1.5rem;
             }
          }
       }

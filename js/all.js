@@ -1,13 +1,14 @@
 //add nav class
-var bodyClass = document.querySelector("nav.nav").classList,
+var bodyClass = document.querySelector("nav.nav"),
    lastScrollY = 0;
 window.addEventListener("scroll", function () {
    var st = this.scrollY;
+   console.log(top);
    // 判斷是向上捲動，而且捲軸超過 200px
    if (st < lastScrollY) {
-      bodyClass.remove("hideUp");
+      bodyClass.classList.remove("hideUp");
    } else {
-      bodyClass.add("hideUp");
+      bodyClass.classList.add("hideUp");
    }
    lastScrollY = st;
 });
@@ -55,7 +56,13 @@ program_list.addEventListener(
    true
 );
 
-document.getElementById("submit").onclick = function () {
-   var radio = document.querySelector("input[type=radio][name=language]:checked");
-   radio.checked = false;
-};
+//qa list radio
+var tempRadio = null;
+function checkRadio(checkedRadio) {
+   if (tempRadio == checkedRadio) {
+      checkedRadio.checked = false;
+      tempRadio = null;
+   } else {
+      tempRadio = checkedRadio;
+   }
+}
