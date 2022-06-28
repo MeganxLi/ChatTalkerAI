@@ -1,6 +1,45 @@
 #index {
-   .page-bg {
-      background-image: url(../img/bg_home.svg);
-      width: 60%;
+   header {
+      max-height: 768px;
+      .wrapper {
+         padding-top: 88px;
+         @include rwd(sm) {
+            flex-direction: column;
+         }
+
+         .introduce,
+         .home-img {
+            width: 100%;
+            @include rwd(2xs) {
+               margin-top: 0;
+               padding-top: 0;
+               width: 100%;
+            }
+         }
+      }
+      h1 {
+         line-height: 4rem;
+
+         @include rwd(lg) {
+            @include font-size(3xl);
+         }
+
+         @include rwd(sm) {
+            @include font-size(2xl);
+         }
+      }
+
+      .page-bg {
+         background-image: url(../img/bg_home.svg);
+         width: 60%;
+
+         @include rwd(sm) {
+            background-image: url(../img/bg_home_sm.svg);
+            width: 100%;
+            background-position: bottom center;
+            background-origin: content-box;
+            padding: 0 1.5rem;
+         }
+      }
    }
 }

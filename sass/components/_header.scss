@@ -1,7 +1,6 @@
 header {
    width: 100%;
    position: relative;
-   height: 100vh;
 
    nav.nav {
       z-index: 100;
@@ -14,7 +13,7 @@ header {
          border-bottom: 2px solid $colors-tertiary;
          background-color: $color-black-0;
       }
-      @include rwd(2xs) {
+      @include rwd(xs) {
          background-color: $color-black-0;
          border-bottom: 2px solid $colors-tertiary;
       }
