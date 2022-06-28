@@ -1,16 +1,12 @@
 //add nav class
-var bodyClass = document.querySelector("nav.nav"),
-   lastScrollY = 0;
+var bodyClass = document.querySelector("nav.nav");
 window.addEventListener("scroll", function () {
    var st = this.scrollY;
-   console.log(top);
-   // 判斷是向上捲動，而且捲軸超過 200px
-   if (st < lastScrollY) {
-      bodyClass.classList.remove("hideUp");
-   } else {
+   if (0 < st) {
       bodyClass.classList.add("hideUp");
+   } else {
+      bodyClass.classList.remove("hideUp");
    }
-   lastScrollY = st;
 });
 
 //footer current year
@@ -44,6 +40,8 @@ program_list.addEventListener(
    "click",
    function (e) {
       var num = e.target.value;
+      if (num === undefined) return;
+
       var index = programs.indexOf(num) + 1;
       var baseTWD = 600 * index;
       var standardTWD = 1600 * index;
