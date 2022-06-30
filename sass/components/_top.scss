@@ -1,0 +1,18 @@
+#to-top {
+   position: fixed;
+   z-index: 5;
+   right: 2rem;
+   bottom: 2rem;
+   width: 4rem;
+   height: 4rem;
+   background-color: $colors-primary;
+   color: $color-black-0;
+   border-radius: 50%;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 1.125rem;
+   line-height: 4rem;
+   font-family: "Wendy One", Regular;
+   transition: all 1s;
+   cursor: pointer;
+}

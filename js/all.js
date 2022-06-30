@@ -1,11 +1,19 @@
-//add nav class
+//add nav class and to top animate
 var bodyClass = document.querySelector("nav.nav");
+var to_top = document.getElementById("to-top");
 window.addEventListener("scroll", function () {
    var st = this.scrollY;
    if (0 < st) {
       bodyClass.classList.add("hideUp");
+      to_top.style.display = "block";
+      to_top.style.transition = "opacity 5s";
+      to_top.animate({ opacity: 1 }, 500);
    } else {
       bodyClass.classList.remove("hideUp");
+      to_top.animate({ opacity: [1, 0] }, 300);
+      window.setTimeout(function () {
+         to_top.style.display = "none";
+      }, 500);
    }
 });
 
@@ -63,4 +71,17 @@ function checkRadio(checkedRadio) {
    } else {
       tempRadio = checkedRadio;
    }
+}
+
+//check to top
+function animateToTop(e) {
+   e.preventDefault();
+   var scrollToTop = window.setInterval(function () {
+      var pos = window.pageYOffset;
+      if (pos > 0) {
+         window.scrollTo(0, pos - 20);
+      } else {
+         window.clearInterval(scrollToTop);
+      }
+   }, 16);
 }
