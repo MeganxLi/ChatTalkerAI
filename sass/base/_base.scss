@@ -156,6 +156,10 @@ h3 {
 h4 {
    @include font-size(lg);
 }
+h5 {
+   @include font-size(base);
+   font-weight: bold;
+}
 
 .back-img {
    background-size: contain;

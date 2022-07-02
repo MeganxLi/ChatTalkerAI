@@ -1,0 +1,15 @@
+$max: 5;
+@for $i from 1 through $max {
+   .star-#{$i} {
+      $url_list: ();
+      @for $url from 1 through $i {
+         $url_star: url(../img/icon_star.svg);
+         $url_list: append($url_list, $url_star, comma);
+      }
+      background-image: $url_list;
+      background-position: 0px, 24px, 48px, 72px, 96px;
+      background-repeat: no-repeat;
+      flex: 1 1 auto;
+      transform: scaleX(-1);
+   }
+}
