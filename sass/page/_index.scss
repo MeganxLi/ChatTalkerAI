@@ -208,16 +208,19 @@
             transform: translateX(-50%) translateY(50%) rotate(180deg);
             z-index: -1;
          }
+         .comment-overflow {
+            overflow: hidden;
+         }
          .comment-lsit {
             padding-top: 5rem;
             padding-bottom: 1rem;
             display: flex;
-            gap: 1rem;
-            overflow: hidden;
+            transition: transform 500ms ease 0s;
             .comment-card {
-               width: 350px;
+               width: 100%;
                position: relative;
                height: 100%;
+               padding-right: 16px;
             }
             img {
                border-radius: 50%;
@@ -226,6 +229,7 @@
                position: absolute;
                top: -60px;
                left: 2rem;
+               background-color: $color-black-0;
             }
 
             .comment-content {
@@ -259,13 +263,14 @@
             display: flex;
             justify-content: center;
             gap: 0.5rem;
-            .slick-check {
+            .dots-check {
                width: 10px;
                height: 10px;
-               border-radius: 50%;
+               border-radius: 50px;
                background-color: $color-black-500;
+               cursor: pointer;
             }
-            .slick-active {
+            .dots-active {
                width: 16px;
                background-color: $colors-tertiary;
             }

@@ -925,20 +925,27 @@ footer {
   z-index: -1;
 }
 
+#index main .comment .comment-overflow {
+  overflow: hidden;
+}
+
 #index main .comment .comment-lsit {
   padding-top: 5rem;
   padding-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
-  overflow: hidden;
+  -webkit-transition: -webkit-transform 500ms ease 0s;
+  transition: -webkit-transform 500ms ease 0s;
+  transition: transform 500ms ease 0s;
+  transition: transform 500ms ease 0s, -webkit-transform 500ms ease 0s;
 }
 
 #index main .comment .comment-lsit .comment-card {
-  width: 350px;
+  width: 100%;
   position: relative;
   height: 100%;
+  padding-right: 16px;
 }
 
 #index main .comment .comment-lsit img {
@@ -948,6 +955,7 @@ footer {
   position: absolute;
   top: -60px;
   left: 2rem;
+  background-color: #ffffff;
 }
 
 #index main .comment .comment-lsit .comment-content {
@@ -1001,14 +1009,15 @@ footer {
   gap: 0.5rem;
 }
 
-#index main .comment .slick-dots .slick-check {
+#index main .comment .slick-dots .dots-check {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: #dddddd;
+  cursor: pointer;
 }
 
-#index main .comment .slick-dots .slick-active {
+#index main .comment .slick-dots .dots-active {
   width: 16px;
   background-color: #f5ca52;
 }
