@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
       to_top.animate({ opacity: [1, 0] }, 300);
       window.setTimeout(function () {
          to_top.style.display = "none";
-      }, 500);
+      }, 300);
    }
 });
 
