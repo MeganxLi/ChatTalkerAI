@@ -70,7 +70,7 @@
                label {
                   padding: 0.75rem 2rem;
                   color: $colors-primary;
-                  outline: 1px solid $colors-primary;
+                  border: 1px solid $colors-primary;
                   border-radius: 27px;
                   white-space: nowrap;
                   cursor: pointer;
@@ -186,6 +186,7 @@
                position: relative;
                cursor: pointer;
                padding: 1rem 2rem;
+               border-radius: 12px;
                @include font-size(lg);
                display: flex;
                align-items: center;

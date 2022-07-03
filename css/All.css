@@ -368,8 +368,8 @@ body {
   font-style: normal;
   line-height: 1;
   position: relative;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 ol,
@@ -411,8 +411,8 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
 }
 
@@ -524,8 +524,8 @@ header nav.nav .container .pricing-link {
   padding: 8px 32px;
   background-color: #ff5d50;
   color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 header .page-bg {
@@ -654,8 +654,8 @@ footer {
 
 @media (max-width: 640px) {
   #index header h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 
@@ -676,6 +676,12 @@ footer {
 
 #index .content {
   margin-bottom: 100px;
+}
+
+@media (max-width: 640px) {
+  #index .content {
+    margin-bottom: 30px;
+  }
 }
 
 #index .content h2 {
@@ -1142,7 +1148,7 @@ footer {
 #pricing main .program .program-list li label {
   padding: 0.75rem 2rem;
   color: #56c4c5;
-  outline: 1px solid #56c4c5;
+  border: 1px solid #56c4c5;
   border-radius: 27px;
   white-space: nowrap;
   cursor: pointer;
@@ -1289,6 +1295,7 @@ footer {
   position: relative;
   cursor: pointer;
   padding: 1rem 2rem;
+  border-radius: 12px;
   font-size: 1.125rem;
   line-height: 1.75rem;
   display: -webkit-box;
