@@ -694,13 +694,21 @@ footer {
   background-image: url(../img/ball01.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 360px;
-  height: 360px;
+  width: 126px;
+  height: 126px;
   position: absolute;
+  left: 0;
   background-position: top left;
-  -webkit-transform: translateX(-100%) translateY(-60%) rotate(180deg);
-          transform: translateX(-100%) translateY(-60%) rotate(180deg);
+  -webkit-transform: translateX(-50%) translateY(-60%) rotate(180deg);
+          transform: translateX(-50%) translateY(-60%) rotate(180deg);
   z-index: -1;
+}
+
+@media (max-width: 640px) {
+  #index main .community::before {
+    -webkit-transform: translateX(-50%) translateY(20%) rotate(180deg);
+            transform: translateX(-50%) translateY(20%) rotate(180deg);
+  }
 }
 
 #index main .community .community-list {
